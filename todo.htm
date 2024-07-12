@@ -67,6 +67,9 @@
       </div>
     </form>
     <script>
+      function remove(element) {
+        $(element).closest("tr").remove();
+      }
       $(".remove").click(function () {
         $(this).closest("tr").remove();
       });
@@ -83,7 +86,7 @@
         $("#todo-table").append(
           `<tr><td>${$("#title").val()}</td><td>${$(
             "#Description"
-          ).val()}</td> <td><button  class="btn btn-danger remove">Remove</button></td>  </tr>`
+          ).val()}</td> <td><button onclick="remove(this)" class="btn btn-danger remove">Remove</button></td>  </tr>`
         );
       });
     </script>
