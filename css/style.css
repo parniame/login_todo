@@ -1,0 +1,60 @@
+:root {
+    --orange: rgb(255, 76, 41);
+    
+  }
+*{
+    margin: 0;
+    padding: 0;
+}
+.form-container {
+    
+    width: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(44,57, 75);
+    border-radius: 3%;
+  }
+  
+  body{
+    margin: 0 auto;
+    font-family: Arial;
+    background-color: rgb(8,32, 50);
+    color: white;
+    
+  }
+  form{
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    
+   
+
+  }
+  .form-area{
+    display: flex;
+    align-items: center;
+  }
+  form button{
+    background-color: var(--orange);
+    width: 100%;
+    color: white;
+    font-size: medium;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px 0;
+  }
+  form h1{
+    color: var(--orange);
+    margin: 5px;
+  }
+  form input{
+    display: inline-block;
+    margin: 10px 20px;
+    padding: 5px;
+    width: 100%;
+  }
+  
+  
